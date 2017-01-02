@@ -1,8 +1,7 @@
+/// <reference path="../../../node_modules/@types/jquery/index.d.ts" />
+
 import { Component }                from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
-
-// CommonJS style - working with "require"
-import $ = require('jquery');
 
 
 @Component({
@@ -19,7 +18,12 @@ export class LoginComponent {
 
     constructor() {
         console.log("test naja");
-        $('input').index();
+        console.log($('input'));
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
     }
 
 }

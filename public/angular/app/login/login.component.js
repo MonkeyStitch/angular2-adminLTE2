@@ -1,3 +1,4 @@
+/// <reference path="../../../node_modules/@types/jquery/index.d.ts" />
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,12 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// CommonJS style - working with "require"
-var $ = require('jquery');
 var LoginComponent = (function () {
     function LoginComponent() {
         console.log("test naja");
-        $('input').index();
+        console.log($('input'));
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
     }
     LoginComponent = __decorate([
         core_1.Component({
