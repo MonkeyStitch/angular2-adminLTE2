@@ -9,12 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+// CommonJS style - working with "require"
+var $ = require('jquery');
 var LoginComponent = (function () {
     function LoginComponent() {
+        console.log("test naja");
+        $('input').index();
     }
     LoginComponent = __decorate([
         core_1.Component({
-            templateUrl: './public/views/login/login.page.html'
+            templateUrl: './public/views/login/login.page.html',
+            styleUrls: [
+                './public/assets/plugins/iCheck/square/blue.css'
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], LoginComponent);
