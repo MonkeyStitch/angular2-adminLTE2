@@ -10,11 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
+var forms_1 = require('@angular/forms'); // use form
+// app
 var app_component_1 = require('./app.component');
-var app_routing_module_1 = require('./app.routing.module');
+var app_routing_module_1 = require('./app.routing.module'); // use route
+// module, route
+var login_routing_module_1 = require('./app/login/login-routing.module');
+// component
+var not_found_component_1 = require('./app/errors/not-found.component'); // page not found!
+var login_component_1 = require('./app/login/login.component');
 // import { HeroesModule }            from './app/heroes/heroes.module';
-// import { PageNotFoundComponent }   from './app/not-found.component';
 // import { DialogService }           from './services/dialog.service';
 var AppModule = (function () {
     function AppModule() {
@@ -25,10 +30,13 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 // HeroesModule,
+                login_routing_module_1.LoginRoutingModule,
                 app_routing_module_1.AppRoutingModule
             ],
             declarations: [
                 app_component_1.AppComponent,
+                login_component_1.LoginComponent,
+                not_found_component_1.PageNotFoundComponent
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

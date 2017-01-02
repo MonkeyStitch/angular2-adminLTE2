@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// import variable global
 import globols = require('./app.globals');
 
 @Component({

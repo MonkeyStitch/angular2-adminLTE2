@@ -10,22 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-// import { ComposeMessageComponent }  from './compose-message.component';
-var not_found_component_1 = require('./app/errors/not-found.component');
-// import { CanDeactivateGuard }       from './can-deactivate-guard.service';
-// import { AuthGuard }                from './auth-guard.service';
-// import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
-var appRoutes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', component: not_found_component_1.PageNotFoundComponent }
+var login_component_1 = require('./login.component');
+var loginRoutes = [
+    { path: 'login', component: login_component_1.LoginComponent }
 ];
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
+var LoginRoutingModule = (function () {
+    function LoginRoutingModule() {
     }
-    AppRoutingModule = __decorate([
+    LoginRoutingModule = __decorate([
         core_1.NgModule({
             imports: [
-                router_1.RouterModule.forRoot(appRoutes)
+                router_1.RouterModule.forChild(loginRoutes)
             ],
             exports: [
                 router_1.RouterModule
@@ -33,8 +28,8 @@ var AppRoutingModule = (function () {
             providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], AppRoutingModule);
-    return AppRoutingModule;
+    ], LoginRoutingModule);
+    return LoginRoutingModule;
 }());
-exports.AppRoutingModule = AppRoutingModule;
-//# sourceMappingURL=app.routing.module.js.map
+exports.LoginRoutingModule = LoginRoutingModule;
+//# sourceMappingURL=login-route.module.js.map
