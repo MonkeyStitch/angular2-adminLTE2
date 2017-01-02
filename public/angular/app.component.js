@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var globols = require('./globals');
 var AppComponent = (function () {
     function AppComponent() {
+        this.show = globols.url;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: './angular/app/blank/blank.component.html'
+            templateUrl: 'public/view/blank/blank.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

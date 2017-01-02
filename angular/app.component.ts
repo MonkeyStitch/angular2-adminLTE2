@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
 
+import globols = require('./globals');
+
 @Component({
     selector: 'my-app',
-    templateUrl: './angular/app/blank/blank.component.html'
+    templateUrl: 'public/view/blank/blank.component.html'
 })
-export class AppComponent {}
+export class AppComponent {
+
+    show = globols.url
+
+}
