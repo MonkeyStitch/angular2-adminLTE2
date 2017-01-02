@@ -61,7 +61,7 @@ gulp.task("default", function () {
 
 
 elixir(function(mix) {
-    mix.copy('angular/app/**/*.html', 'public/view/');
+    mix.copy('angular/app/**/*.html', 'public/views/');
 });
 
 

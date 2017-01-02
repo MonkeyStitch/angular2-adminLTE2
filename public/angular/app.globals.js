@@ -7,4 +7,4 @@ function base_url(uri) {
 }
 exports.base_url = base_url;
 ;
-//# sourceMappingURL=globals.js.map
+//# sourceMappingURL=app.globals.js.map
