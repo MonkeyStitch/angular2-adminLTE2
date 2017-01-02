@@ -11,7 +11,7 @@ import { PageNotFoundComponent }    from './app/errors/not-found.component';
 
 const appRoutes: Routes = [
 
-    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: '',   redirectTo: '/login', pathMatch: 'full' },
     { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -5,26 +5,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var login_component_1 = require('./login.component');
-var loginRoutes = [
-    { path: 'login', component: login_component_1.LoginComponent }
+var forgot_password_component_1 = require('./forgot-password.component');
+var forgotPasswordRoutes = [
+    { path: 'forgot-password', component: forgot_password_component_1.ForgotPasswordComponent }
 ];
-var LoginRoutingModule = (function () {
-    function LoginRoutingModule() {
+var ForgotPasswordRoutingModule = (function () {
+    function ForgotPasswordRoutingModule() {
     }
-    LoginRoutingModule = __decorate([
+    ForgotPasswordRoutingModule = __decorate([
         core_1.NgModule({
             imports: [
-                router_1.RouterModule.forChild(loginRoutes)
+                router_1.RouterModule.forChild(forgotPasswordRoutes)
             ],
             exports: [
                 router_1.RouterModule
             ],
             providers: []
-        })
-    ], LoginRoutingModule);
-    return LoginRoutingModule;
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ForgotPasswordRoutingModule);
+    return ForgotPasswordRoutingModule;
 }());
-exports.LoginRoutingModule = LoginRoutingModule;
+exports.ForgotPasswordRoutingModule = ForgotPasswordRoutingModule;
+//# sourceMappingURL=forgot-password-routing.module.js.map

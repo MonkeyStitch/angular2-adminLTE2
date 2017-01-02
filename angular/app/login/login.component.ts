@@ -4,7 +4,7 @@ import { Router, NavigationExtras } from '@angular/router';
 declare var jQuery:any;
 
 @Component({
-    templateUrl: './public/views/login/login.page.html',
+    templateUrl: './public/views/login/login-form.html',
 })
 
 
@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
             radioClass: 'iradio_square-blue',
             increaseArea: '20%' // optional
         });
+        jQuery('body').css({background: '#d2d6de'});
     }
 
 

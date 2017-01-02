@@ -16,10 +16,13 @@ var app_component_1 = require('./app.component');
 var app_routing_module_1 = require('./app.routing.module'); // use route
 // module, route
 var login_routing_module_1 = require('./app/login/login-routing.module');
+var register_routing_module_1 = require('./app/register/register-routing.module');
+var forgot_password_routing_module_1 = require('./app/forgot_password/forgot-password-routing.module');
 // component
 var not_found_component_1 = require('./app/errors/not-found.component'); // page not found!
 var login_component_1 = require('./app/login/login.component');
-// import { HeroesModule }            from './app/heroes/heroes.module';
+var register_component_1 = require('./app/register/register.component');
+var forgot_password_component_1 = require('./app/forgot_password/forgot-password.component');
 // import { DialogService }           from './services/dialog.service';
 var AppModule = (function () {
     function AppModule() {
@@ -31,11 +34,15 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 // HeroesModule,
                 login_routing_module_1.LoginRoutingModule,
+                register_routing_module_1.RegisterRoutingModule,
+                forgot_password_routing_module_1.ForgotPasswordRoutingModule,
                 app_routing_module_1.AppRoutingModule
             ],
             declarations: [
                 app_component_1.AppComponent,
                 login_component_1.LoginComponent,
+                register_component_1.RegisterComponent,
+                forgot_password_component_1.ForgotPasswordComponent,
                 not_found_component_1.PageNotFoundComponent
             ],
             providers: [],

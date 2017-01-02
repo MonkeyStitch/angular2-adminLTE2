@@ -9,25 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var LoginComponent = (function () {
-    function LoginComponent(_elRef) {
-        this._elRef = _elRef;
+var router_1 = require('@angular/router');
+var register_component_1 = require('./register.component');
+var registerRoutes = [
+    { path: 'register', component: register_component_1.RegisterComponent }
+];
+var RegisterRoutingModule = (function () {
+    function RegisterRoutingModule() {
     }
-    LoginComponent.prototype.ngOnInit = function () {
-        jQuery(this._elRef.nativeElement).find('input').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square-blue',
-            increaseArea: '20%' // optional
-        });
-        jQuery('body').css({ background: '#d2d6de' });
-    };
-    LoginComponent = __decorate([
-        core_1.Component({
-            templateUrl: './public/views/login/login-form.html',
+    RegisterRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild(registerRoutes)
+            ],
+            exports: [
+                router_1.RouterModule
+            ],
+            providers: []
         }), 
-        __metadata('design:paramtypes', [core_1.ElementRef])
-    ], LoginComponent);
-    return LoginComponent;
+        __metadata('design:paramtypes', [])
+    ], RegisterRoutingModule);
+    return RegisterRoutingModule;
 }());
-exports.LoginComponent = LoginComponent;
-//# sourceMappingURL=login.component.js.map
+exports.RegisterRoutingModule = RegisterRoutingModule;
+//# sourceMappingURL=register-routing.module.js.map

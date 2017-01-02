@@ -9,27 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var login_component_1 = require('./login.component');
-var loginRoutes = [
-    { path: 'login', component: login_component_1.LoginComponent }
-];
-var LoginRoutingModule = (function () {
-    function LoginRoutingModule() {
+var ForgotPasswordComponent = (function () {
+    function ForgotPasswordComponent() {
     }
-    LoginRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild(loginRoutes)
-            ],
-            exports: [
-                router_1.RouterModule
-            ],
-            providers: []
+    ForgotPasswordComponent = __decorate([
+        core_1.Component({
+            templateUrl: './public/views/forgot_password/forgot-password-form.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], LoginRoutingModule);
-    return LoginRoutingModule;
+    ], ForgotPasswordComponent);
+    return ForgotPasswordComponent;
 }());
-exports.LoginRoutingModule = LoginRoutingModule;
-//# sourceMappingURL=login-route.module.js.map
+exports.ForgotPasswordComponent = ForgotPasswordComponent;
+//# sourceMappingURL=forgot-password.component.js.map

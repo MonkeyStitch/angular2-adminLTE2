@@ -16,7 +16,7 @@ var not_found_component_1 = require('./app/errors/not-found.component');
 // import { AuthGuard }                from './auth-guard.service';
 // import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
 var appRoutes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: '**', component: not_found_component_1.PageNotFoundComponent }
 ];
 var AppRoutingModule = (function () {
