@@ -1,4 +1,3 @@
-/// <reference path="../../../node_modules/@types/jquery/index.d.ts" />
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,23 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var LoginComponent = (function () {
-    function LoginComponent() {
-        console.log("test naja");
-        console.log($('input'));
-        $('input').iCheck({
+    function LoginComponent(_elRef) {
+        this._elRef = _elRef;
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+        jQuery(this._elRef.nativeElement).find('input').iCheck({
             checkboxClass: 'icheckbox_square-blue',
             radioClass: 'iradio_square-blue',
             increaseArea: '20%' // optional
         });
-    }
+    };
     LoginComponent = __decorate([
         core_1.Component({
             templateUrl: './public/views/login/login.page.html',
-            styleUrls: [
-                './public/assets/plugins/iCheck/square/blue.css'
-            ]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [core_1.ElementRef])
     ], LoginComponent);
     return LoginComponent;
 }());

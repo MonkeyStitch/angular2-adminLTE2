@@ -1,29 +1,26 @@
-/// <reference path="../../../node_modules/@types/jquery/index.d.ts" />
-
-import { Component }                from '@angular/core';
+import {Component, OnInit, ElementRef}                from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
 
+declare var jQuery:any;
 
 @Component({
     templateUrl: './public/views/login/login.page.html',
-    styleUrls: [
-        './public/assets/plugins/iCheck/square/blue.css'
-    ]
 })
 
 
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
+    constructor(private _elRef:ElementRef) {
 
+    }
 
-    constructor() {
-        console.log("test naja");
-        console.log($('input'));
-        $('input').iCheck({
+    ngOnInit(): any {
+        jQuery(this._elRef.nativeElement).find('input').iCheck({
             checkboxClass: 'icheckbox_square-blue',
             radioClass: 'iradio_square-blue',
             increaseArea: '20%' // optional
         });
     }
+
 
 }
