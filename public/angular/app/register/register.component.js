@@ -14,7 +14,7 @@ var RegisterComponent = (function () {
     }
     RegisterComponent = __decorate([
         core_1.Component({
-            templateUrl: './public/views/register/register-form.html',
+            templateUrl: './public/views/register/register-form.component.html',
         }), 
         __metadata('design:paramtypes', [])
     ], RegisterComponent);

@@ -23,7 +23,7 @@ var LoginComponent = (function () {
     };
     LoginComponent = __decorate([
         core_1.Component({
-            templateUrl: './public/views/login/login-form.html',
+            templateUrl: './public/views/login/login-form.component.html',
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])
     ], LoginComponent);

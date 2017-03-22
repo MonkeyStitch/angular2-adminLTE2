@@ -16,6 +16,7 @@ import { PageNotFoundComponent }   from './app/errors/not-found.component'; // p
 import { LoginComponent }          from './app/login/login.component';
 import { RegisterComponent }          from './app/register/register.component';
 import { ForgotPasswordComponent }          from './app/forgot_password/forgot-password.component';
+import {TestFormComponent} from "./app/testform/testform.component";
 
 
 // import { DialogService }           from './services/dialog.service';
@@ -24,7 +25,7 @@ import { ForgotPasswordComponent }          from './app/forgot_password/forgot-p
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule,
+        FormsModule, // use form
         // HeroesModule,
         LoginRoutingModule,
         RegisterRoutingModule,
@@ -36,7 +37,10 @@ import { ForgotPasswordComponent }          from './app/forgot_password/forgot-p
         LoginComponent,
         RegisterComponent,
         ForgotPasswordComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+
+        // test form
+        TestFormComponent
     ],
     providers: [
         // DialogService

@@ -1,16 +1,16 @@
 import {Component, OnInit, ElementRef}                from '@angular/core';
-import { Router, NavigationExtras } from '@angular/router';
 
 declare var jQuery:any;
 
 @Component({
-    templateUrl: './public/views/login/login-form.html',
+    templateUrl: './public/views/login/login-form.component.html',
 })
 
 
 export class LoginComponent implements OnInit {
 
-    constructor(private _elRef:ElementRef) {
+
+    constructor(private _elRef:ElementRef) { // form builder simplify form initialization
 
     }
 
@@ -22,6 +22,8 @@ export class LoginComponent implements OnInit {
         });
         jQuery('body').css({background: '#d2d6de'});
     }
+
+
 
 
 }

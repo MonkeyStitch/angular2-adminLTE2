@@ -2,7 +2,7 @@ import {Component}    from '@angular/core';
 
 
 @Component({
-    templateUrl: './public/views/forgot_password/forgot-password-form.html',
+    templateUrl: './public/views/forgot_password/forgot-password-form.component.html',
 })
 
 

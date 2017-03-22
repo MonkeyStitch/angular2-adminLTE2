@@ -14,7 +14,7 @@ var ForgotPasswordComponent = (function () {
     }
     ForgotPasswordComponent = __decorate([
         core_1.Component({
-            templateUrl: './public/views/forgot_password/forgot-password-form.html',
+            templateUrl: './public/views/forgot_password/forgot-password-form.component.html',
         }), 
         __metadata('design:paramtypes', [])
     ], ForgotPasswordComponent);

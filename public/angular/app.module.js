@@ -23,6 +23,7 @@ var not_found_component_1 = require('./app/errors/not-found.component'); // page
 var login_component_1 = require('./app/login/login.component');
 var register_component_1 = require('./app/register/register.component');
 var forgot_password_component_1 = require('./app/forgot_password/forgot-password.component');
+var testform_component_1 = require("./app/testform/testform.component");
 // import { DialogService }           from './services/dialog.service';
 var AppModule = (function () {
     function AppModule() {
@@ -43,7 +44,9 @@ var AppModule = (function () {
                 login_component_1.LoginComponent,
                 register_component_1.RegisterComponent,
                 forgot_password_component_1.ForgotPasswordComponent,
-                not_found_component_1.PageNotFoundComponent
+                not_found_component_1.PageNotFoundComponent,
+                // test form
+                testform_component_1.TestFormComponent
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

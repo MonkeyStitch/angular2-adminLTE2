@@ -12,10 +12,15 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 // import { ComposeMessageComponent }  from './compose-message.component';
 var not_found_component_1 = require('./app/errors/not-found.component');
+var testform_component_1 = require("./app/testform/testform.component");
 // import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 // import { AuthGuard }                from './auth-guard.service';
 // import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
 var appRoutes = [
+    {
+        path: '/test-form',
+        component: testform_component_1.TestFormComponent
+    },
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: '**', component: not_found_component_1.PageNotFoundComponent }
 ];
